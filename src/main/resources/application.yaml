@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: local, clean
+  security:
+    user:
+      name: user
+      password: user
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:productdb
+  jpa:
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
